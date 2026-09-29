@@ -1,0 +1,30 @@
+# --- Web framework ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.7
+pydantic-settings>=2.3
+
+# --- LLM client (LM Studio, OpenAI-compatible) ---
+openai>=1.30
+
+# --- Retrieval / RAG ---
+chromadb>=0.5.5
+rank-bm25>=0.2.2
+numpy>=1.26
+
+# --- Metadata / chat persistence (Postgres) ---
+psycopg[binary]>=3.1
+psycopg-pool>=3.2
+
+# --- Document ingestion ---
+pypdf>=5.0
+python-docx>=1.1
+beautifulsoup4>=4.12
+requests>=2.32
+
+# --- Web search providers (all optional at runtime) ---
+ddgs>=9.0            # zero-config fallback
+tavily-python>=0.5   # used only if TAVILY_API_KEY is set
+
+python-dotenv>=1.0

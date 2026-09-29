@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Env / secrets
+.env
+backend/.env
+
+# Persistent vector store & uploads
+data/
+backend/data/
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/node_modules/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
